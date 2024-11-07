@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tally Store Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .instructions {
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tally Store Demo</h1>
+    
+    <div class="instructions">
+        <h2>Instructions</h2>
+        <p>1. Open your browser's console (F12 or Command+Option+J)</p>
+        <p>2. Watch the test results appear in the console</p>
+        <p>3. Try the store methods in the console:</p>
+        <ul>
+            <li>store.getState()</li>
+            <li>store.dispatch({ type: 'ADD' })</li>
+            <li>store.dispatch({ type: 'SUBTRACT' })</li>
+            <li>store.dispatch({ type: 'RESET' })</li>
+        </ul>
+    </div>
+
+    <script type="module">
+        import { createStore, ActionTypes } from './src/store.js';
+        
+        // Make store available globally for console testing
+        window.store = createStore();
+        window.ActionTypes = ActionTypes;
+        
+        // Run tests
+        console.log('Store is available in console as "store"');
+        console.log('Try: store.getState()');
+    </script>
+</body>
+</html>

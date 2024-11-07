@@ -1,0 +1,12 @@
+{
+  "name": "tally-store",
+  "version": "1.0.0",
+  "description": "Redux-inspired tally store implementation",
+  "main": "src/store.js",
+  "type": "module",
+  "scripts": {
+    "test": "node tests/store.test.js"
+  },
+  "author": "Dumisani Nxumalo",
+  "license": "MIT"
+}
