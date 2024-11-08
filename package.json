@@ -5,7 +5,8 @@
   "main": "src/store.js",
   "type": "module",
   "scripts": {
-    "test": "node tests/store.test.js"
+    "test": "node tests/store.test.js",
+    "start": "node tests/store.test.js"
   },
   "author": "Dumisani Nxumalo",
   "license": "MIT"

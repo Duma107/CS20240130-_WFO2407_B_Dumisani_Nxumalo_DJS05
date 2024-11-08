@@ -50,6 +50,7 @@ export const createStore = (initialState = { count: 0 }) => {
   const dispatch = (action) => {
     currentState = reducer(currentState, action);
     subscribers.forEach(subscriber => subscriber(currentState));
+    console.log('State updated:', currentState);
   };
 
   return {
